@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "CleanMp",
+  "version": "1.0",
+
+  "description": "Removes AdMarkt Ads",
+
+  "icons": {
+    "48": "icons/favicon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["CleanMp.js"]
+    }
+  ]
+
+}
